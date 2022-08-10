@@ -1,3 +1,3 @@
-# business-website
+# Sniffy Club
 
-Simple business website
+Simple business website for a dog's day care

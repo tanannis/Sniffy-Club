@@ -6,9 +6,10 @@
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
 			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="css/lightbox.min.css" />
 		<link rel="stylesheet" href="css/utilities.css" />
@@ -19,14 +20,15 @@
 		<header class="hero blog">
 			<div id="navbar" class="navbar top">
 				<h1 class="logo">
-					<span class="text-primary"><i class="fas fa-book-open"></i> Edge</span
-					>Ledger
+					<span class="text-primary"
+						><i class="fa-solid fa-dog"></i> Sniffy</span
+					>Club
 				</h1>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="index.html#about">About</a></li>
-						<li><a href="index.html#cases">Cases</a></li>
+						<li><a href="#activities">Activties</a></li>
 						<li><a href="#index.html#blog">Blog</a></li>
 						<li><a href="#index.html#contact">Contact</a></li>
 					</ul>
@@ -39,54 +41,23 @@
 		</header>
 
 		<main>
-			<article class="flex-columns">
-				<div class="row">
-					<div class="column">
-						<div class="column-1">
-							<img src="images/blog/blog1.jpg" alt="" />
-						</div>
-					</div>
-					<div class="column">
-						<div class="column-2 bg-light">
-							<h2>Blog Post One</h2>
-							<p class="meta">
-								<i class="fas fa-user"></i> Posted by
-								<strong>John Doe</strong> | April 19, 2020
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-								illum, animi earum ea amet sequi reiciendis sit corporis sunt
-								iusto cupiditate odio maxime adipisci cumque eligendi nemo
-								dolore id itaque?
-							</p>
-							<a href="post.html" class="btn btn-dark">
-								<i class="fas fa-chevron"></i>
-								Read More
-							</a>
-						</div>
-					</div>
-				</div>
-			</article>
-
 			<article class="flex-columns flex-reverse">
 				<div class="row">
 					<div class="column">
 						<div class="column-1">
-							<img src="images/blog/blog2.jpg" alt="" />
+							<img src="images/team/clinic.jpg" alt="" />
 						</div>
 					</div>
 					<div class="column">
 						<div class="column-2 bg-dark">
-							<h2>Blog Post Two</h2>
+							<h2>Lily's Birthday</h2>
 							<p class="meta">
-								<i class="fas fa-user"></i> Posted by
-								<strong>Hane Doe</strong> | April 30, 2020
+								<i class="fas fa-user"></i> Posted on April 19, 2020
 							</p>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-								illum, animi earum ea amet sequi reiciendis sit corporis sunt
-								iusto cupiditate odio maxime adipisci cumque eligendi nemo
-								dolore id itaque?
+								Today is Lily's 10th birthday, her friends and family are all
+								here to celebrate with her. She had some paw shape cookies and a
+								lot of treats from other club members...
 							</p>
 							<a href="post.html" class="btn btn-light">
 								<i class="fas fa-chevron"></i>
@@ -101,21 +72,19 @@
 				<div class="row">
 					<div class="column">
 						<div class="column-1">
-							<img src="images/blog/blog3.jpg" alt="" />
+							<img src="images/blog/playdate.jpg" alt="" />
 						</div>
 					</div>
 					<div class="column">
 						<div class="column-2 bg-light">
-							<h2>Blog Post Three</h2>
+							<h2>A Play Date</h2>
 							<p class="meta">
-								<i class="fas fa-user"></i> Posted by
-								<strong>Steve Smith</strong> | June 8, 2020
+								<i class="fas fa-user"></i> Posted on June 8, 2020
 							</p>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-								illum, animi earum ea amet sequi reiciendis sit corporis sunt
-								iusto cupiditate odio maxime adipisci cumque eligendi nemo
-								dolore id itaque?
+								Today is another play date for Cody and Marley! They met in the
+								SniffyClub back in 2019, and they fell in love with each other
+								immediately. They would play and eat togther...
 							</p>
 							<a href="post.html" class="btn btn-dark">
 								<i class="fas fa-chevron"></i>
@@ -134,28 +103,28 @@
 				<a href="#"><i class="fab fa-youtube fa-2x"></i></a>
 				<a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
 			</div>
-			<p>Copyright &copy; 2020 - EdgeLedger</p>
+			<p>Copyright &copy; 2020 - SniffyClub</p>
 		</footer>
 
 		<script>
 			const navbar = document.getElementById("navbar");
 			let scrolled = false;
-			window.onscroll = function() {
+			window.onscroll = function () {
 				// if we scroll down and pass 100px, remove the transparent affect
 				if (window.pageYOffset > 100) {
 					navbar.classList.remove("top");
-					// will go up 70px and disappear 
-					if (!scrolled) navbar.style.transform = "translateY(-70px)"
-					setTimeout(function() {
+					// will go up 70px and disappear
+					if (!scrolled) navbar.style.transform = "translateY(-70px)";
+					setTimeout(function () {
 						navbar.style.transform = "translateY(0)";
 						scrolled = true;
-					}, 200)
+					}, 200);
 				} else {
 					// put transparent affect back
 					navbar.classList.add("top");
 					scrolled = false;
 				}
-			}
+			};
 		</script>
 	</body>
 </html>
